@@ -1,31 +1,24 @@
-package Week1.Day2;
+package week1.day2;
 
 public class FindIntersection {
 
+	public static void main(String[] args) {
+		
+	 int[] fstArray= {3,2,11,4,6,7};
+	int[] sndArray= {1,2,8,4,9,7};
 	
-	public static void main(String[] args)
+	for(int i=0; i<fstArray.length; i++)
 	{
-		
-	
-		 int set1[] = {3,2,11,4,6,7};
-
-		 int set2[] = {1,2,8,4,9,7};
-		
-	
-	System.out.println("Intersection of the two arrays");
-
-	for (int i = 0; i < set1.length; i++) {
-
-		for (int j = 0; j < set2.length; j++) {
-
-			if (set1[i] == set2[j]) {
-
-				System.out.println(set1[j]);
+		for(int j=0;j<sndArray.length;j++)
+		{
+			if(fstArray[i]==sndArray[j])
+			{
+				System.out.println(fstArray[i]);
 			}
 		}
 		
-		}
-		
-		
-		}
+	}
+	
+	
+	}
 }
